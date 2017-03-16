@@ -12,16 +12,26 @@
   <table border="1">
     <tr>
       <td>Fahrenheit</td>
-      <td><input type="number"  name="Fahrenheit" id="Fahrenheit"></td>
-      <td><button type="button" onclick="convertirAcelsius(),return false">Convert to Celsius</button></td>
+      <td><input type="number"  name="Fahrenheit" id="C"></td>
+      <td><button type="button" value="" onclick="convert('C')">Convert to Celsius</button></td>
     </tr>
     <tr>
       <td>Celisus</td>
-      <td><input type="number"  name="Celsius"></td>
-      <td><button type="button" onclick="convertirCelius(),return false">Convert to Fahrenheit</button></td>
+      <td><input type="number"  name="Celsius" id="F"></td>
+      <td><button type="button" onclick="convert('F')">Convert to Fahrenheit</button></td>
     </tr>
   </table>
   </div>
-      <script src = "fahrenheit.js"> </script>
+      <script>function convert (degree){
+        var numero;
+        if(degree == 'C'){
+          numero = document.getElementById('C').value * 1.8 + 32;
+          document.getElementById('F').value = Math.round(numero);
+        } else {
+          numero = document.getElementById('C').value / 1.8 - 32;
+          document.getElementById('F').value = Math.round(numero);
+        }
+      }
+      </script>
   </body>
 </html>
