@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 1 HTML</title>
+  </head>
+  <body>
+    <h1>Primer formulario</h1>
+    <p> <label>Nombre:</label> <input type="text" name="name_control"></p>
+
+    <p> <label>Apellido:</label><input type="text" name="apellido_control"></p>
+
+    <p> <label>Pais en el que vives</label> <select name="select">
+      <option value="value1" selected>Mexico</option>
+      <option value="value2">Chile</option>
+      <option value="value3">Peru</option>
+      </select></p>
+
+    <p> <label>Numero de telefono:</label> <input type="tel" name="tel"> </p>
+
+    <p> <label>Email:</label> <input type="email" name="email"></p>
+
+    <p> <label>Contraseña:</label> <input type="password" name="pw" pattern=".{6,}" title="Ingresa 6 caracteresrequired" required></p>
+
+    <p> <label>Fecha de nacimiento:</label> <input type="date" name="date" required></p>
+
+    <p> <input type="submit" value="Enviar"></p>
+
+  </body>
+</html>
